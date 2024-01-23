@@ -1,11 +1,8 @@
-FROM mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+FROM mcr.microsoft.com/mssql/server:2019-latest
 
-RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-COPY scripts /usr/src/app
-
-RUN chmod +x /usr/src/app/run-initialization.sh
+COPY --chmod=755 scripts /usr/src/app
 
 ENV SA_PASSWORD @Alfresco2017@
 ENV ACCEPT_EULA Y
