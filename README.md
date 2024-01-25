@@ -18,6 +18,7 @@ The image is created with the base alfresco database.
 It uses the default account `sa` with the password `@Alfresco2017@`
 
 For acs configuration you should use the [documentation](https://docs.alfresco.com/content-services/latest/config/databases/#microsoft-sql-server) for the MS SQL Server. We do enable snapshot isolation by default.
+The docker images, by version, are available as tags to this project.
 
 ## Example Docker Compose Configuration
 
