@@ -50,6 +50,6 @@ The jdbc driver is added through a volume bind (It is important that you use the
 ```
   volumes:
     - type: bind
-    source: ./mssql-jdbc-9.2.1.jre11.jar
-    target: /usr/local/tomcat/lib/mssql-jdbc-9.2.1.jre11.jar
+    source: ./mssql-jdbc-11.2.0.jre17.jar
+    target: /usr/local/tomcat/lib/mssql-jdbc-11.2.0.jre17.jar
 ```
