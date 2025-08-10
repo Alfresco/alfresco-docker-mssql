@@ -29,7 +29,13 @@ Define the service
     image: alfresco-mssql:latest
     mem_limit: 1g
     ports:
-        - "1433:1433"
+      - "1433:1433"
+    healthcheck:
+      test: ["CMD", "/opt/mssql-tools18/bin/sqlcmd", "-S", "127.0.0.1", "-U", "sa", "-P", "@Alfresco2017@", "-d", "alfresco", "-Q", "'SELECT 1'", "-C"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
 ```
 Database configuration for the `alfresco` service.  This is added to `JAVA_OPTS`
 ```
