@@ -2,16 +2,17 @@
 
 **_Note: This project is for internal development and testing purposes only._**
 
-These are the supported MSSQL versions for the currently (Jan 2024) supported ACS Versions
+These are the supported MSSQL versions for the currently (Aug 2025) supported ACS Versions
 
-||2017|2019|
-|---|---|---|
-|7.0|&#10004;|&#10004;|
-|7.1|&#10004;|&#10004;|
-|7.2|&#10004;|&#10004;|
-|7.3||&#10004;|
-|7.4||&#10004;|
-|23||&#10004;|
+||2017|2019|2022|EOL|
+|---|---|---|---|---|
+|7.0|&#10004;|&#10004;||&#10004;|
+|7.1|&#10004;|&#10004;||&#10004;|
+|7.2|&#10004;|&#10004;||&#10004;|
+|7.3||&#10004;|||
+|7.4||&#10004;|||
+|23||&#10004;|&#10004;||
+|25||&#10004;|&#10004;||
 
 The image is created with the base alfresco database.
 
