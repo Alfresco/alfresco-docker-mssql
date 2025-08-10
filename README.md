@@ -16,7 +16,10 @@ These are the supported MSSQL versions for the currently (Aug 2025) supported AC
 
 The image is created with the base alfresco database.
 
-It uses the default account `sa` with the password `@Alfresco2017@`
+### Dockerfile*
+There are multiple `Dockerfile`s available.  The default will use the latest supported (2022). The others will use the latest version of MSSQL indicated in the name. All are built using the Ubuntu based MSSQL server images.
+
+All use the default account `sa` with the password `@Alfresco2017@`
 
 For acs configuration you should use the [documentation](https://docs.alfresco.com/content-services/latest/config/databases/#microsoft-sql-server) for the MS SQL Server. We do enable snapshot isolation by default.
 The docker images, by version, are available as tags to this project.
